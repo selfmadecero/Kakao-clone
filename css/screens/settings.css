@@ -1,0 +1,30 @@
+.settings-setting {
+  padding: 24px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-setting i {
+  opacity: 0.8;
+  margin-right: 24px;
+  font-size: 22px;
+}
+
+.status-bar__column:nth-child(3) span {
+  color: tomato;
+}
+
+.status-bar__column .fa-battery-quarter {
+  color: tomato;
+}
+
+.status-bar__column .fa-bolt {
+  color: green;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}

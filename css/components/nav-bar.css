@@ -1,0 +1,86 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 24px 48px;
+  box-sizing: border-box;
+  border-top: var(--main-border);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.2, 0.2) rotateY(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 3s ease-in-out infinite;
+}
+
+.nav__notification-dot {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  right: -10px;
+  bottom: 25px;
+}
+
+@keyframes appearBtnAnimaion {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn:nth-child(1) {
+  will-change: transform;
+  animation: appearBtnAnimaion 1.5s ease-in-out;
+}
+.nav__btn:nth-child(2) {
+  will-change: transform;
+  animation: appearBtnAnimaion 2s ease-in-out;
+}
+.nav__btn:nth-child(3) {
+  will-change: transform;
+  animation: appearBtnAnimaion 2.5s ease-in-out;
+}
+.nav__btn:nth-child(4) {
+  will-change: transform;
+  animation: appearBtnAnimaion 3s ease-in-out;
+}
